@@ -18,7 +18,7 @@ namespace Microsoft.TeamServices.Samples.ServiceHooks
             Console.WriteLine("Utility to restore Service Hooks manage permissions to the project administrator group");            
             Console.WriteLine("");
 
-            if (collectionUri != null)
+            if (collectionUri == null)
             {
                 TfsTeamProjectCollection connection = new TfsTeamProjectCollection(collectionUri);
 

@@ -1,0 +1,2 @@
+Teste de integração contínua com GitHub Actions.
+Alteração realizada para verificar a automação.
