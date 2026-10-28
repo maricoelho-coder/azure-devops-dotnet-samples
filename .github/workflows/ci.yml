@@ -1,0 +1,12 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  verifica:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Mensagem de teste
+        run: echo "Código recebido! CI rodando no commit $GITHUB_SHA"
